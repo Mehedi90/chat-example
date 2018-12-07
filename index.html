@@ -1,23 +1,30 @@
 <!doctype html>
 <html>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <head>
+       <div class="w3-panel w3-black">
+    <h1 style="color:gray; text-align:center;font-size:260%;"><b>MESSSENGER CHAT APPLICATION</b></h1></r><br>
+   <h5 style="color:white; text-align:center;font-size:170%;">chay box is for writting and sending message<br>between Members</h5></r><br>
+  </div><br>
     <title>Socket.IO chat</title>
     <style>
       * { margin: 0; padding: 0; box-sizing: border-box; }
       body { font: 13px Helvetica, Arial; }
-      form { background: #000; padding: 3px; position: fixed; bottom: 0; width: 100%; }
-      form input { border: 0; padding: 10px; width: 90%; margin-right: .5%; }
-      form button { width: 9%; background: rgb(130, 224, 255); border: none; padding: 10px; }
+      form { background:Navy; padding: 20px; position: fixed; bottom: 0; width: 100%; }
+      form input { border: 5; padding: 20px; width: 80%; margin-right: .5%; }
+      form button { width: 18%; background:yellow; border: none; padding: 15px; }
       #messages { list-style-type: none; margin: 0; padding: 0; }
-      #messages li { padding: 5px 10px; }
-      #messages li:nth-child(odd) { background: #eee; }
-      #messages { margin-bottom: 40px }
+      #messages li { padding: 5px 10px;background:green; }
+      #messages li:nth-child(odd) { background:red; }
+      #messages { margin-bottom: 40px; background:pink;}
     </style>
   </head>
   <body>
+    
     <ul id="messages"></ul>
     <form action="">
-      <input id="m" autocomplete="off" /><button>Send</button>
+      <input id="m" autocomplete="off" /><button>MESSSAGE SEND BUTTON</button>
     </form>
     <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
     <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
